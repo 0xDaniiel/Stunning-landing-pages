@@ -51,7 +51,7 @@ export default function Hero() {
           <motion.h1
             variants={fadeUp}
             custom={1}
-            className="text-4xl font-semibold leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl"
+            className="font-display text-4xl font-semibold leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl"
           >
             Powering the
             <br />

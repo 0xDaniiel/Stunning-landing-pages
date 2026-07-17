@@ -1,11 +1,11 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 
 export default function GradientOrb() {
   const ref = useRef<HTMLDivElement>(null);
-  const [isHovering, setIsHovering] = useState(false);
+  //   const [isHovering, setIsHovering] = useState(false);
 
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
@@ -31,14 +31,12 @@ export default function GradientOrb() {
   function handleMouseLeave() {
     mouseX.set(0);
     mouseY.set(0);
-    setIsHovering(false);
   }
-
   return (
     <div
       ref={ref}
       onMouseMove={handleMouseMove}
-      onMouseEnter={() => setIsHovering(true)}
+      //   onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={handleMouseLeave}
       className="relative flex h-95 w-95] items-center justify-center perspective:1000px sm:h-110 sm:w-110"
     >
